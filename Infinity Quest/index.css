@@ -1,0 +1,78 @@
+body{
+    background: linear-gradient(-45deg, purple, blue, black);
+    background-size: 400% 600%;
+    position: relative;
+    animation-name: examples;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    Margin-top: 20%;
+}
+
+button {
+    height: 200px;
+    width: 300px;
+    align-self: center;
+}
+
+.wis, .str, .cou {
+    display: none !important;
+}
+
+#landingContainer {
+    height: 95vh;
+    width: 97vw;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.1)
+    }
+}
+
+.movingText {
+    font-family: cursive;
+    font-size: 30px;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    color: red;
+    text-shadow: 2px 2px #ffffff;
+    letter-spacing: 5px;
+}
+
+@keyframes examples{
+    0%{
+        background-position: 0 50%;
+    } 
+    25%{
+         background-position: 100% 50%;      
+    }
+    50%{
+         background-position: 0 50%;
+    }
+    100%{
+          background-position: 0 50%;      
+    } 
+}
+
+img{
+    height: 80%;
+    width: 50%;  
+}
+
+img:hover {
+    transform: scale(1.5);
+    box-shadow: 5px 10px 15px #000000;
+}
+
